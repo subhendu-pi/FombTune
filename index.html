@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <script>
+      (function() {
+        // Intercept unhandled promise rejections from Vite client WebSocket in iframe
+        window.addEventListener('unhandledrejection', function(event) {
+          if (event && event.reason && (
+            String(event.reason.message || event.reason).includes('WebSocket closed without opened') ||
+            String(event.reason.message || event.reason).includes('WebSocket')
+          )) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+          }
+        }, true);
+        window.addEventListener('error', function(event) {
+          if (event && (
+            event.message?.includes('WebSocket closed without opened') ||
+            event.message?.includes('WebSocket')
+          )) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+    <title>FabTune - Material 3 Music Player</title>
+    <meta name="description" content="Elegant Material 3 music client with synchronized lyrics, vinyl turntable mode, real-time audio equalizer, charts, explore, custom playlists, and yearly Wrapped music stats." />
+    <meta property="og:title" content="FabTune - Material 3 Music Player" />
+    <meta property="og:description" content="Elegant Material 3 music client with synchronized lyrics, vinyl turntable mode, real-time audio equalizer, charts, explore, custom playlists, and yearly Wrapped music stats." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#09090b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FabTune" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

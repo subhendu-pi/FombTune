@@ -1,0 +1,83 @@
+# ==============================================================================
+# FabTune Android Application Package (APK) Version & Export Specification (.exp)
+# File: public/apk.exp
+# Target App: FabTune - Material 3 Music Player
+# Generated: 2026-10-15
+# Format: Key-Value Export Specification / POSIX-compatible environment export
+# ==============================================================================
+
+# --- Application Identity ---
+APP_NAME="FabTune Player"
+APP_DISPLAY_NAME="FabTune - Material 3 Music Player"
+APP_ID="com.webview.myapplication"
+APP_PACKAGE_NAME="com.webview.myapplication"
+APP_MAIN_ACTIVITY="com.webview.myapplication.MainActivity"
+
+# --- Versioning Metadata ---
+VERSION_NAME="1.0.0"
+VERSION_CODE=1
+BUILD_NUMBER=1
+RELEASE_TAG="v1.0.0-release"
+RELEASE_CHANNEL="stable"
+RELEASE_TYPE="production"
+BUILD_TIMESTAMP="2026-10-15T01:32:21Z"
+BUILD_DATE="2026-10-15"
+
+# --- Android SDK Compatibility ---
+MIN_SDK_VERSION=30
+MIN_ANDROID_VERSION="Android 11.0 (Red Velvet Cake)"
+TARGET_SDK_VERSION=34
+TARGET_ANDROID_VERSION="Android 14.0 (Upside Down Cake)"
+COMPILE_SDK_VERSION=34
+COMPILE_SDK_CODENAME="14"
+
+# --- Hardware & Architecture ---
+SUPPORTED_ARCHITECTURES="universal (arm64-v8a, armeabi-v7a, x86, x86_64)"
+HARDWARE_FEATURES="android.hardware.faketouch, android.hardware.touchscreen"
+SCREEN_DENSITIES="160, 240, 320, 480, 640 (mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi)"
+SUPPORTED_SCREENS="small, normal, large, xlarge"
+ANY_DENSITY=true
+
+# --- Android Permissions ---
+PERMISSION_COUNT=3
+PERMISSIONS="android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.webview.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+
+# --- Binary Artifact Specifications ---
+APK_FILENAME="FabTune.apk"
+APK_RELATIVE_PATH="public/FabTune.apk"
+APK_SIZE_BYTES=1370734
+APK_SIZE_HUMAN="1.31 MB (1,370,734 bytes)"
+APK_ALIGNMENT="4-byte boundary (zipalign verified)"
+APK_MIME_TYPE="application/vnd.android.package-archive"
+
+# --- Cryptographic Checksums & Integrity Hashes ---
+APK_SHA256="8732f48b51a61b5435495166f63862fa8ed478da3e638cd43c093550d1cb7ae2"
+APK_SHA1="a8fc625c18d4dc3a575cabc2bc6159febe92f94d"
+APK_MD5="2428122ecb55f68500dc7ffb98d45621"
+
+# --- Android Digital Signature Verification ---
+SIGNER_KEYSTORE="fabtune.keystore"
+SIGNER_ALIAS="fabtune"
+KEY_ALGORITHM="RSA 2048-bit"
+CERTIFICATE_VALIDITY_DAYS=10000
+CERT_DN="CN=FabTune, OU=Music, O=FabTune, L=Tokyo, ST=Tokyo, C=JP"
+APK_SIGNATURE_V1_JAR_VERIFIED=true
+APK_SIGNATURE_V2_FULL_VERIFIED=true
+APK_SIGNATURE_V3_ROTATION_VERIFIED=true
+APK_SIGNATURE_V4_INCREMENTAL=false
+VERIFICATION_STATUS="VERIFIED_SUCCESSFUL"
+
+# --- Build Tools ---
+BUILD_TOOL_AAPT="Android Asset Packaging Tool (aapt v0.2)"
+BUILD_TOOL_ZIPALIGN="Android zipalign (4-byte alignment)"
+BUILD_TOOL_APKSIGNER="Android apksigner v34"
+
+# --- Download & Distribution Endpoints ---
+DOWNLOAD_URL_PATH="/FabTune.apk"
+DOWNLOAD_URL_ALT="/downloads/FabTune.apk"
+DOWNLOAD_API_PATH="/api/download/apk"
+VERSION_SPEC_PATH="/apk.exp"
+
+# ==============================================================================
+# End of apk.exp specification
+# ==============================================================================

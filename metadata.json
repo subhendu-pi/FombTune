@@ -1,0 +1,8 @@
+{
+  "name": " FabTune - 4.0 Music Player",
+  "description": "Elegant Material 3 music client with synchronized lyrics, vinyl turntable mode, real-time audio equalizer, charts, explore, custom playlists, and yearly Wrapped music stats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

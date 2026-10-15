@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <radialGradient id="vinylSheen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.15)" />
+      <stop offset="60%" stop-color="rgba(255,255,255,0.02)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0.6)" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Outer Vinyl Platter -->
+  <circle cx="256" cy="256" r="200" fill="#121215" stroke="#27272a" stroke-width="6" />
+  
+  <!-- Vinyl Concentric Grooves -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2" />
+  <circle cx="256" cy="256" r="160" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2" />
+  <circle cx="256" cy="256" r="140" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="2" />
+  <circle cx="256" cy="256" r="120" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+  <circle cx="256" cy="256" r="100" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+
+  <!-- Specular Sheen -->
+  <circle cx="256" cy="256" r="200" fill="url(#vinylSheen)" />
+
+  <!-- Center Label Badge -->
+  <circle cx="256" cy="256" r="76" fill="url(#accentGrad)" filter="drop-shadow(0 8px 24px rgba(20,184,166,0.4))" />
+
+  <!-- Inner Spindle -->
+  <circle cx="256" cy="256" r="22" fill="#09090b" stroke="#3f3f46" stroke-width="4" />
+  <circle cx="256" cy="256" r="8" fill="#e4e4e7" />
+
+  <!-- Stylized Soundwave Arc -->
+  <path d="M 220 220 A 50 50 0 0 1 292 220" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+  <path d="M 205 205 A 72 72 0 0 1 307 205" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+</svg>
